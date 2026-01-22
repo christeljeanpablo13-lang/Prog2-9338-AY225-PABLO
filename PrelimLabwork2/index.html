@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpetual Molino - Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="container">
+        <div class="login-card">
+            <div class="header">
+                <div class="logo">🎓</div>
+                <h1>Perpetual Molino</h1>
+                <p>Attendance Tracking System</p>
+            </div>
+            <div class="form-container">
+                <div id="errorMessage" class="error-message"></div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">© 2026 Powered by Christel Pablo - All Rights Reserved</div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="container dashboard hidden">
+        <div class="dashboard-card">
+            <div class="header">
+                <div class="logo">🎓</div>
+                <h1>Attendance Dashboard</h1>
+            </div>
+            
+            <div class="user-profile">
+                <div class="user-info">
+                    <div class="user-avatar" id="userAvatar"></div>
+                    <div class="user-details">
+                        <h2 id="welcomeName"></h2>
+                        <p><strong>Course:</strong> BSIT_GD - 1st Year</p>
+                        <p><strong>Institution:</strong> Perpetual Molino</p>
+                    </div>
+                </div>
+                <div class="signature-box">
+                    <strong>Digital Signature:</strong> <span id="userSignature"></span>
+                </div>
+            </div>
+
+            <div class="tracker-guide">
+                <h3>Attendance Tracker Guide</h3>
+                <p>
+                    Welcome to your attendance tracker! You can log in and log out once per session. 
+                    Each attendance record includes the date and time of your action. 
+                    Your attendance history is saved and can be downloaded or cleared at any time.
+                </p>
+            </div>
+
+            <div class="attendance-section">
+                <div class="action-buttons">
+                    <button class="btn" id="logInBtn">Log In</button>
+                    <button class="btn" id="logOutBtn">Log Out</button>
+                    <button class="btn btn-secondary" id="downloadBtn">Download Records</button>
+                    <button class="btn btn-danger" id="clearBtn">Clear History</button>
+                </div>
+
+                <h3 style="color: #800020; margin-bottom: 15px;">Attendance Records</h3>
+                <table class="records-table">
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recordsBody">
+                        <tr>
+                            <td colspan="3" class="no-records">No attendance records yet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="padding: 20px; text-align: center;">
+                <button class="btn btn-secondary" id="logoutBtn">Logout from System</button>
+            </div>
+        </div>
+        <div class="footer">© 2026 Powered by Christel Pablo - All Rights Reserved</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
