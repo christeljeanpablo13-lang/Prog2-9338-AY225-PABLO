@@ -154,7 +154,7 @@ public class AttendanceTracker {
         // ---------------- FOOTER ----------------
         JPanel footerPanel = new JPanel();
         footerPanel.setBackground(gold);
-        JLabel footerLabel = new JLabel("© University of Perpetual Help - Attendance Tracker");
+        JLabel footerLabel = new JLabel("© Powered By Christel Pablo - Attendance Tracker");
         footerLabel.setFont(new Font("SansSerif", Font.PLAIN, 12));
         footerLabel.setForeground(Color.BLACK);
         footerPanel.add(footerLabel);
