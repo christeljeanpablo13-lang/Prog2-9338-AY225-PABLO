@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prelim Exam Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg"></div>
+
+  <!-- Calculator Card -->
+  <div class="card">
+    <div class="badge">🎓</div>
+
+    <h1>Prelim Exam Calculator</h1>
+    <p class="subtitle">Calculate your required Prelim Exam score</p>
+
+    <div class="section">✏ Enter Your Grades</div>
+
+    <label>Attendance</label>
+    <input type="number" id="attendance" placeholder="0 – 100">
+
+    <label>Lab Work 1</label>
+    <input type="number" id="lab1" placeholder="0 – 100">
+
+    <label>Lab Work 2</label>
+    <input type="number" id="lab2" placeholder="0 – 100">
+
+    <label>Lab Work 3</label>
+    <input type="number" id="lab3" placeholder="0 – 100">
+
+    <button id="calcBtn">📊 CALCULATE</button>
+
+    <textarea id="output" readonly></textarea>
+
+    <div class="progress">
+      <div id="progress-bar">0%</div>
+    </div>
+
+    <footer>
+      Prelim Lab Work 3 – Grade Calculator<br>
+      AY 2024–2025<br>
+      <strong>Powered by Christel Pablo</strong>
+    </footer>
+  </div>
+
+  <!-- AUDIO (MATCHES YOUR FILE NAMES EXACTLY) -->
+  <audio id="clickSound" preload="auto">
+    <source src="heavenly-music-gaming-sound-effect-hd-mp3cut.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="errorSound" preload="auto">
+    <source src="error_CDOxCYm.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
